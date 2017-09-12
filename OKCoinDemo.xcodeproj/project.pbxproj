@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC0F9E001F6686C000C0161C /* ZDOKSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0F9DFF1F6686C000C0161C /* ZDOKSetViewController.m */; };
+		FC9C07811F67CBBC00BFDA19 /* ZDOKSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07731F67CBBC00BFDA19 /* ZDOKSetViewController.m */; };
+		FC9C07821F67CBBC00BFDA19 /* ZDCoinPriceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07761F67CBBC00BFDA19 /* ZDCoinPriceModel.m */; };
+		FC9C07831F67CBBC00BFDA19 /* CoinPrice in Resources */ = {isa = PBXBuildFile; fileRef = FC9C07781F67CBBC00BFDA19 /* CoinPrice */; };
+		FC9C07841F67CBBC00BFDA19 /* ZDPriceCoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C077E1F67CBBC00BFDA19 /* ZDPriceCoinCell.m */; };
+		FC9C07851F67CBBC00BFDA19 /* ZDPriceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07801F67CBBC00BFDA19 /* ZDPriceTableView.m */; };
+		FC9C07891F67D7DF00BFDA19 /* ZDRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07881F67D7DF00BFDA19 /* ZDRefreshTableView.m */; };
+		FC9C078C1F67DE8B00BFDA19 /* ZDRefreshCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C078B1F67DE8B00BFDA19 /* ZDRefreshCell.m */; };
 		FCED9B121F664A940060EF74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCED9B111F664A940060EF74 /* main.m */; };
 		FCED9B151F664A940060EF74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCED9B141F664A940060EF74 /* AppDelegate.m */; };
 		FCED9B181F664A940060EF74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCED9B171F664A940060EF74 /* ViewController.m */; };
@@ -17,8 +23,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC0F9DFE1F6686C000C0161C /* ZDOKSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDOKSetViewController.h; sourceTree = "<group>"; };
-		FC0F9DFF1F6686C000C0161C /* ZDOKSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOKSetViewController.m; sourceTree = "<group>"; };
+		FC9C07721F67CBBC00BFDA19 /* ZDOKSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDOKSetViewController.h; sourceTree = "<group>"; };
+		FC9C07731F67CBBC00BFDA19 /* ZDOKSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOKSetViewController.m; sourceTree = "<group>"; };
+		FC9C07751F67CBBC00BFDA19 /* ZDCoinPriceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCoinPriceModel.h; sourceTree = "<group>"; };
+		FC9C07761F67CBBC00BFDA19 /* ZDCoinPriceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCoinPriceModel.m; sourceTree = "<group>"; };
+		FC9C07781F67CBBC00BFDA19 /* CoinPrice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoinPrice; sourceTree = "<group>"; };
+		FC9C077A1F67CBBC00BFDA19 /* GXBMacrosDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBMacrosDefine.h; sourceTree = "<group>"; };
+		FC9C077D1F67CBBC00BFDA19 /* ZDPriceCoinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDPriceCoinCell.h; sourceTree = "<group>"; };
+		FC9C077E1F67CBBC00BFDA19 /* ZDPriceCoinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDPriceCoinCell.m; sourceTree = "<group>"; };
+		FC9C077F1F67CBBC00BFDA19 /* ZDPriceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDPriceTableView.h; sourceTree = "<group>"; };
+		FC9C07801F67CBBC00BFDA19 /* ZDPriceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDPriceTableView.m; sourceTree = "<group>"; };
+		FC9C07861F67D07D00BFDA19 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FC9C07871F67D7DF00BFDA19 /* ZDRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDRefreshTableView.h; sourceTree = "<group>"; };
+		FC9C07881F67D7DF00BFDA19 /* ZDRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDRefreshTableView.m; sourceTree = "<group>"; };
+		FC9C078A1F67DE8B00BFDA19 /* ZDRefreshCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDRefreshCell.h; sourceTree = "<group>"; };
+		FC9C078B1F67DE8B00BFDA19 /* ZDRefreshCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDRefreshCell.m; sourceTree = "<group>"; };
 		FCED9B0D1F664A940060EF74 /* OKCoinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKCoinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCED9B111F664A940060EF74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCED9B131F664A940060EF74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +61,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC9C07701F67CBBC00BFDA19 /* PriceSetting */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C07741F67CBBC00BFDA19 /* Model */,
+				FC9C07711F67CBBC00BFDA19 /* Controller */,
+				FC9C077C1F67CBBC00BFDA19 /* View */,
+				FC9C07771F67CBBC00BFDA19 /* Resource */,
+			);
+			path = PriceSetting;
+			sourceTree = "<group>";
+		};
+		FC9C07711F67CBBC00BFDA19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C07721F67CBBC00BFDA19 /* ZDOKSetViewController.h */,
+				FC9C07731F67CBBC00BFDA19 /* ZDOKSetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC9C07741F67CBBC00BFDA19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C07751F67CBBC00BFDA19 /* ZDCoinPriceModel.h */,
+				FC9C07761F67CBBC00BFDA19 /* ZDCoinPriceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC9C07771F67CBBC00BFDA19 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C07781F67CBBC00BFDA19 /* CoinPrice */,
+				FC9C07791F67CBBC00BFDA19 /* Macros */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FC9C07791F67CBBC00BFDA19 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C077A1F67CBBC00BFDA19 /* GXBMacrosDefine.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		FC9C077C1F67CBBC00BFDA19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C077D1F67CBBC00BFDA19 /* ZDPriceCoinCell.h */,
+				FC9C077E1F67CBBC00BFDA19 /* ZDPriceCoinCell.m */,
+				FC9C077F1F67CBBC00BFDA19 /* ZDPriceTableView.h */,
+				FC9C07801F67CBBC00BFDA19 /* ZDPriceTableView.m */,
+				FC9C07871F67D7DF00BFDA19 /* ZDRefreshTableView.h */,
+				FC9C07881F67D7DF00BFDA19 /* ZDRefreshTableView.m */,
+				FC9C078A1F67DE8B00BFDA19 /* ZDRefreshCell.h */,
+				FC9C078B1F67DE8B00BFDA19 /* ZDRefreshCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FCED9B041F664A940060EF74 = {
 			isa = PBXGroup;
 			children = (
@@ -61,16 +141,16 @@
 		FCED9B0F1F664A940060EF74 /* OKCoinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC9C07701F67CBBC00BFDA19 /* PriceSetting */,
 				FCED9B131F664A940060EF74 /* AppDelegate.h */,
 				FCED9B141F664A940060EF74 /* AppDelegate.m */,
 				FCED9B161F664A940060EF74 /* ViewController.h */,
 				FCED9B171F664A940060EF74 /* ViewController.m */,
-				FC0F9DFE1F6686C000C0161C /* ZDOKSetViewController.h */,
-				FC0F9DFF1F6686C000C0161C /* ZDOKSetViewController.m */,
 				FCED9B191F664A940060EF74 /* Main.storyboard */,
 				FCED9B1C1F664A940060EF74 /* Assets.xcassets */,
 				FCED9B1E1F664A940060EF74 /* LaunchScreen.storyboard */,
 				FCED9B211F664A940060EF74 /* Info.plist */,
+				FC9C07861F67D07D00BFDA19 /* PrefixHeader.pch */,
 				FCED9B101F664A940060EF74 /* Supporting Files */,
 			);
 			path = OKCoinDemo;
@@ -144,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCED9B201F664A940060EF74 /* LaunchScreen.storyboard in Resources */,
+				FC9C07831F67CBBC00BFDA19 /* CoinPrice in Resources */,
 				FCED9B1D1F664A940060EF74 /* Assets.xcassets in Resources */,
 				FCED9B1B1F664A940060EF74 /* Main.storyboard in Resources */,
 			);
@@ -157,9 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCED9B181F664A940060EF74 /* ViewController.m in Sources */,
-				FC0F9E001F6686C000C0161C /* ZDOKSetViewController.m in Sources */,
+				FC9C07811F67CBBC00BFDA19 /* ZDOKSetViewController.m in Sources */,
+				FC9C07851F67CBBC00BFDA19 /* ZDPriceTableView.m in Sources */,
+				FC9C07821F67CBBC00BFDA19 /* ZDCoinPriceModel.m in Sources */,
 				FCED9B151F664A940060EF74 /* AppDelegate.m in Sources */,
+				FC9C078C1F67DE8B00BFDA19 /* ZDRefreshCell.m in Sources */,
+				FC9C07841F67CBBC00BFDA19 /* ZDPriceCoinCell.m in Sources */,
 				FCED9B121F664A940060EF74 /* main.m in Sources */,
+				FC9C07891F67D7DF00BFDA19 /* ZDRefreshTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/OKCoinDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = OKCoinDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhudong.OKCoinDemo;
@@ -290,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/OKCoinDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = OKCoinDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhudong.OKCoinDemo;
