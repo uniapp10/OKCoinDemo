@@ -10,9 +10,9 @@
 #import "ZDPriceCoinCell.h"
 #import "ZDCoinPriceModel.h"
 
-@interface ZDPriceTableView ()<UITableViewDataSource>
+@interface ZDPriceTableView ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray<ZDCoinPriceModel *> *dataArray;
+@property (nonatomic, strong) NSMutableArray<ZDCoinPriceModel *> *dataArray;
 
 @end
 
@@ -23,6 +23,7 @@
     self = [super initWithFrame:frame style:style];
     if (self) {
         self.dataSource = self;
+        self.delegate = self;
         self.rowHeight = CellH;
         UIView *bottomSepV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, GXB_ScreenWidth, 0.5)];
         bottomSepV.backgroundColor = [UIColor darkGrayColor];
@@ -38,12 +39,10 @@
     NSData *priceData = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CoinPrice" ofType:nil]];
     NSArray *priceArray = [NSJSONSerialization JSONObjectWithData:priceData options:NSJSONReadingMutableContainers error:nil];
     
-    NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:priceArray.count];
     [priceArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         ZDCoinPriceModel *coinModel = [[ZDCoinPriceModel alloc] initWithDict:obj];
-        [arrM addObject:coinModel];
+        [self.dataArray addObject:coinModel];
     }];
-    self.dataArray = arrM;
 }
 
 #pragma mark - Table view data source
@@ -68,4 +67,19 @@
     return coinCell;
 }
 
+- (void)setSeletedIndex:(NSInteger)seletedIndex{
+    _seletedIndex = seletedIndex;
+    [self.dataArray removeAllObjects];
+    for (int i = 0; i < seletedIndex + 1; i++) {
+        [self loadData];
+    }
+    [self reloadData];
+}
+
+- (NSMutableArray<ZDCoinPriceModel *> *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
 @end

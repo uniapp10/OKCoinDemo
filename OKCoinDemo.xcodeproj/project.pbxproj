@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1BDC9A1F68C89F00910DD8 /* ZDSettingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BDC991F68C89F00910DD8 /* ZDSettingTableView.m */; };
+		FC1BDC9D1F68C8B700910DD8 /* ZDSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BDC9C1F68C8B700910DD8 /* ZDSettingCell.m */; };
+		FC1BDCA01F68D16B00910DD8 /* ZDQuotationTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BDC9F1F68D16B00910DD8 /* ZDQuotationTableView.m */; };
+		FC1BDCA31F68D6A000910DD8 /* ZDPriceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BDCA21F68D6A000910DD8 /* ZDPriceHeaderView.m */; };
+		FC1BDCA61F69002C00910DD8 /* ZDPriceContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BDCA51F69002C00910DD8 /* ZDPriceContentView.m */; };
 		FC9C07811F67CBBC00BFDA19 /* ZDOKSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07731F67CBBC00BFDA19 /* ZDOKSetViewController.m */; };
 		FC9C07821F67CBBC00BFDA19 /* ZDCoinPriceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C07761F67CBBC00BFDA19 /* ZDCoinPriceModel.m */; };
 		FC9C07831F67CBBC00BFDA19 /* CoinPrice in Resources */ = {isa = PBXBuildFile; fileRef = FC9C07781F67CBBC00BFDA19 /* CoinPrice */; };
@@ -23,6 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1BDC981F68C89F00910DD8 /* ZDSettingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingTableView.h; sourceTree = "<group>"; };
+		FC1BDC991F68C89F00910DD8 /* ZDSettingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingTableView.m; sourceTree = "<group>"; };
+		FC1BDC9B1F68C8B700910DD8 /* ZDSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSettingCell.h; sourceTree = "<group>"; };
+		FC1BDC9C1F68C8B700910DD8 /* ZDSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSettingCell.m; sourceTree = "<group>"; };
+		FC1BDC9E1F68D16B00910DD8 /* ZDQuotationTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDQuotationTableView.h; sourceTree = "<group>"; };
+		FC1BDC9F1F68D16B00910DD8 /* ZDQuotationTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDQuotationTableView.m; sourceTree = "<group>"; };
+		FC1BDCA11F68D6A000910DD8 /* ZDPriceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDPriceHeaderView.h; sourceTree = "<group>"; };
+		FC1BDCA21F68D6A000910DD8 /* ZDPriceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDPriceHeaderView.m; sourceTree = "<group>"; };
+		FC1BDCA41F69002C00910DD8 /* ZDPriceContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDPriceContentView.h; sourceTree = "<group>"; };
+		FC1BDCA51F69002C00910DD8 /* ZDPriceContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDPriceContentView.m; sourceTree = "<group>"; };
 		FC9C07721F67CBBC00BFDA19 /* ZDOKSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDOKSetViewController.h; sourceTree = "<group>"; };
 		FC9C07731F67CBBC00BFDA19 /* ZDOKSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDOKSetViewController.m; sourceTree = "<group>"; };
 		FC9C07751F67CBBC00BFDA19 /* ZDCoinPriceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCoinPriceModel.h; sourceTree = "<group>"; };
@@ -110,14 +125,24 @@
 		FC9C077C1F67CBBC00BFDA19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC9C077D1F67CBBC00BFDA19 /* ZDPriceCoinCell.h */,
-				FC9C077E1F67CBBC00BFDA19 /* ZDPriceCoinCell.m */,
+				FC1BDC9E1F68D16B00910DD8 /* ZDQuotationTableView.h */,
+				FC1BDC9F1F68D16B00910DD8 /* ZDQuotationTableView.m */,
+				FC1BDCA41F69002C00910DD8 /* ZDPriceContentView.h */,
+				FC1BDCA51F69002C00910DD8 /* ZDPriceContentView.m */,
 				FC9C077F1F67CBBC00BFDA19 /* ZDPriceTableView.h */,
 				FC9C07801F67CBBC00BFDA19 /* ZDPriceTableView.m */,
+				FC1BDCA11F68D6A000910DD8 /* ZDPriceHeaderView.h */,
+				FC1BDCA21F68D6A000910DD8 /* ZDPriceHeaderView.m */,
+				FC9C077D1F67CBBC00BFDA19 /* ZDPriceCoinCell.h */,
+				FC9C077E1F67CBBC00BFDA19 /* ZDPriceCoinCell.m */,
 				FC9C07871F67D7DF00BFDA19 /* ZDRefreshTableView.h */,
 				FC9C07881F67D7DF00BFDA19 /* ZDRefreshTableView.m */,
 				FC9C078A1F67DE8B00BFDA19 /* ZDRefreshCell.h */,
 				FC9C078B1F67DE8B00BFDA19 /* ZDRefreshCell.m */,
+				FC1BDC981F68C89F00910DD8 /* ZDSettingTableView.h */,
+				FC1BDC991F68C89F00910DD8 /* ZDSettingTableView.m */,
+				FC1BDC9B1F68C8B700910DD8 /* ZDSettingCell.h */,
+				FC1BDC9C1F68C8B700910DD8 /* ZDSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,7 +264,12 @@
 			files = (
 				FCED9B181F664A940060EF74 /* ViewController.m in Sources */,
 				FC9C07811F67CBBC00BFDA19 /* ZDOKSetViewController.m in Sources */,
+				FC1BDCA61F69002C00910DD8 /* ZDPriceContentView.m in Sources */,
+				FC1BDCA01F68D16B00910DD8 /* ZDQuotationTableView.m in Sources */,
+				FC1BDC9A1F68C89F00910DD8 /* ZDSettingTableView.m in Sources */,
 				FC9C07851F67CBBC00BFDA19 /* ZDPriceTableView.m in Sources */,
+				FC1BDCA31F68D6A000910DD8 /* ZDPriceHeaderView.m in Sources */,
+				FC1BDC9D1F68C8B700910DD8 /* ZDSettingCell.m in Sources */,
 				FC9C07821F67CBBC00BFDA19 /* ZDCoinPriceModel.m in Sources */,
 				FCED9B151F664A940060EF74 /* AppDelegate.m in Sources */,
 				FC9C078C1F67DE8B00BFDA19 /* ZDRefreshCell.m in Sources */,

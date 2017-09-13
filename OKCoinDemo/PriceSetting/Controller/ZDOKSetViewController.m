@@ -7,13 +7,15 @@
 //
 
 #import "ZDOKSetViewController.h"
-#import "ZDPriceTableView.h"
+#import "ZDPriceContentView.h"
 #import "ZDRefreshTableView.h"
+#import "ZDSettingTableView.h"
 
 @interface ZDOKSetViewController ()
 
-@property (nonatomic, strong) ZDPriceTableView *priceView;
+@property (nonatomic, strong) ZDPriceContentView *priceContentView;
 @property (nonatomic, strong) ZDRefreshTableView *refreshView;
+@property (nonatomic, strong) ZDSettingTableView *settingView;
 
 @end
 
@@ -22,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = GXB_RGBColor(240, 240, 240);
     [self setTitleView];
     [self addPriceView];
     self.navigationController.navigationBar.translucent = false;
@@ -33,7 +35,7 @@
     [titleControl addTarget:self action:@selector(segmentControlChanged:) forControlEvents:UIControlEventValueChanged];
     titleControl.frame = CGRectMake(0, 100, 240, 30);
     titleControl.tintColor = [UIColor whiteColor];
-    [titleControl setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blueColor]} forState:UIControlStateSelected];
+    [titleControl setTitleTextAttributes:@{NSForegroundColorAttributeName:GXB_RGBColor(64, 175, 250)} forState:UIControlStateSelected];
     [titleControl setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
     titleControl.selectedSegmentIndex = 0;
     self.navigationItem.titleView = titleControl;
@@ -43,7 +45,7 @@
     [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
     backBtn.transform = CGAffineTransformMakeRotation(M_PI);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    self.navigationController.navigationBar.barTintColor = GXB_RGBColor(64, 175, 250);
 }
 - (void)backBtnClick{
     [self.navigationController popViewControllerAnimated:true];
@@ -60,24 +62,28 @@
             break;
             
         default:
+            [self addSettingView];
             break;
     }
 }
 
 - (void)addPriceView {
-    [self.view addSubview:self.priceView];
+    [self.view addSubview:self.priceContentView];
 }
 
 - (void)addRefreshView {
     [self.view addSubview:self.refreshView];
 }
 
-- (ZDPriceTableView *)priceView {
-    if (!_priceView) {
-        _priceView = [[ZDPriceTableView alloc] initWithFrame:CGRectMake(0, 0, GXB_ScreenWidth, GXB_ScreenHeight) style:UITableViewStylePlain];
-        _priceView.separatorStyle = UITableViewCellSeparatorStyleNone;
+- (void)addSettingView {
+    [self.view addSubview:self.settingView];
+}
+
+- (ZDPriceContentView *)priceContentView{
+    if (!_priceContentView) {
+        _priceContentView = [[ZDPriceContentView alloc] initWithFrame:CGRectMake(0, 0, GXB_ScreenWidth, GXB_ScreenHeight)];
     }
-    return _priceView;
+    return _priceContentView;
 }
 
 - (ZDRefreshTableView *)refreshView {
@@ -88,4 +94,10 @@
     return _refreshView;
 }
 
+- (ZDSettingTableView *)settingView{
+    if (!_settingView) {
+        _settingView = [[ZDSettingTableView alloc] initWithFrame:CGRectMake(0, 0, GXB_ScreenWidth, GXB_ScreenHeight) style:UITableViewStylePlain];
+    }
+    return _settingView;
+}
 @end

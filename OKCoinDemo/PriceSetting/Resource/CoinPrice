@@ -1,18 +1,18 @@
 [
     {
         "title": "OKCoinCN币行",
-        "price": "1000.01"
+        "price": "$1000.01"
     },
     {
         "title": "OKCoinCOM国际站",
-        "price": "1000.02"
+        "price": "$1000.02"
     },
     {
         "title": "BitFinex",
-        "price": "1000.03"
+        "price": "$1000.03"
     },
     {
         "title": "Coinbase",
-        "price": "1000.04"
+        "price": "$1000.04"
     },
 ]

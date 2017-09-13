@@ -6,8 +6,10 @@
 //  Copyright © 2017年 朱冬冬. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZDQuotationTableView.h"
 
-@interface ZDPriceTableView : UITableView
+@interface ZDPriceTableView : ZDQuotationTableView
+
+@property (nonatomic, assign) NSInteger seletedIndex;
 
 @end
